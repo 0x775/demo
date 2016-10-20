@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no,minimal-ui"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link type="text/css" rel="stylesheet" href="/static/wap/base.css"/>
+</head>
+<body>
+<div class="wraper pdr15">
+  <div class="article-detail clearfix">
+    <h1 class="title">{{detail.title}}</h1>
+    <div class="time">{{detail.inputtime}}　{{detail.type}}</div>
+    <div class="hr-line"></div>
+    <div class="article-content FN18" id="artContent">
+      {% autoescape false %}{{detail.content}}{% endautoescape %}
+    </div>
+</div>
+
+<script type="text/javascript" src="/static/wap/zepto.min.js"></script>
+<script type="text/javascript" src="/static/wap/fastclick.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    //
+});
+</script>
+</body>
+</html>

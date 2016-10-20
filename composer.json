@@ -1,0 +1,32 @@
+{
+    "require":{
+        "twig/twig": "1.*",
+        "illuminate/database": "~4.2",
+        "filp/whoops": "*"
+    },
+    "autoload": {
+            "classmap": [
+                "public/libs"
+            ],
+            "psr-4":{
+                "":["public/app/controllers/","public/app/models","public/class/"]
+            },
+            "files":["public/helper/mongo.php"]
+            
+
+    },
+    "scripts": {
+        "post-update-cmd": [
+            
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}

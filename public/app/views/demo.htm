@@ -1,0 +1,7 @@
+{% extends 'base.htm' %}
+{%block title%} Demo-Index {%endblock%}
+{%block content%}
+username: {{name}} <br><br>
+<a href="{{ reverse_url('demo-html') }}">links</a>
+<br><br>
+{%endblock%}

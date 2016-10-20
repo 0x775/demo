@@ -1,0 +1,92 @@
+<!doctype html>
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no,minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<link type="text/css" rel="stylesheet" href="/static/wap/base.css">
+<!--添加css-->
+<link rel="stylesheet" type="text/css" href="/static/wap/style.css">
+<!--end-->
+<script type="text/javascript" src="/static/wap/zepto.min.js"></script>
+<script type="text/javascript" src="/static/wap/template.js"></script>
+<style type="text/css">
+*{
+  padding: 0;
+  margin:0;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header" style="position: relative;">
+<div class="back"><a href="javascript:history.back();" class="back_btn"></a>
+</div><div class="header-title">贫困户详细信息</div>
+</div>
+<div class="wraper">
+  <div class="grid-box pa12 LHN">
+      <h1 style="height:30px">杨顺才<span class="sex">（男）</span></h1>
+      <p class="FN13 c-gray mt5" style="border-top:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8;line-height:30px">
+      <span class="fr">漩涡镇黄龙村一组</span>
+      <span>一般贫困户</span>
+      </p>
+      <p class="FN13 c-gray mt5" style="border-bottom:1px solid #e8e8e8;line-height:30px">
+      <span>身份证号:&nbsp&nbsp&nbsp420300199699999999</span>
+      </p>
+      <p class="FN13 c-gray mt5" style="border-bottom:1px solid #e8e8e8;line-height:30px">
+      <span>银行卡号:&nbsp&nbsp&nbsp621700282062469</span>
+      <span class="fr">十堰农商银行</span>
+      </p>
+  </div>
+  <div class="grid-box pl12 mt15">
+    <ul class="mod-list">
+      <li class="fst">
+      <dfn>家庭人口数：</dfn>
+      <span>8人</span>　
+      </li>
+      <li class="action-photo-call">
+      <dfn>联系电话：</dfn><a href="tel:18666666666">18666666666</a>
+      </li>
+    </ul>
+  </div>
+   <div class="grid-box pl12 mt15">
+  <h2 class="mod-cite">致贫原因</h2>
+  <ul class="mod-list">
+  <li>
+  <div class="fold-box-! fs14 c-gray">
+    1.自身动力发展不足<br/>
+    2.家庭成员人数过多<br/>
+    3.老龄化严重，缺乏新生劳动力<br/>
+</div>
+  </li>
+  </ul>
+  </div>
+  <div class="grid-box pl12 mt15">
+    <ul class="mod-list">
+      <li class="fst action-detail-info" onclick="window.location.href='{{reverse_url('member-detail-baseinfo','china')}}'">
+        <div class="arw-right">基本信息</div>
+      </li>
+      <li class="action-detail-xingcheng" onclick="window.location.href='{{reverse_url('member-detail-family','china')}}'">
+        <div class="arw-right">家庭成员</div>
+      </li>
+	  <li class="action-detail-tese" onclick="window.location.href='{{reverse_url('member-detail-life','china')}}'">
+        <div class="arw-right">生产生活条件</div>
+      </li>
+      <li class="action-detail-tese" onclick="window.location.href='{{reverse_url('member-detail-shouru','china')}}'">
+        <div class="arw-right">收入卫计信息</div>
+      </li>
+      <li class="action-detail-tese" onclick="window.location.href='{{reverse_url('member-detail-banqian','china')}}'">
+        <div class="arw-right">异地搬迁</div>
+      </li>
+    </ul>
+  </div>
+ 
+</div>
+<script type="text/javascript" src="/static/wap/fastclick.js"></script>
+
+
+
+</body></html>

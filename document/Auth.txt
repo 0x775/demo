@@ -1,0 +1,29 @@
+//如果导入默认mysql出错
+修改默认时间格式
+`created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+//***********************************************************
+
+//创建一个用户
+Sentry::register(array(
+    'email'    => 'zhangsan',
+    'password' => '123',
+));
+
+//创建一个分组
+Sentry::createGroup(array(
+    'name'        => '系统管理员',
+    'permissions' => array(
+        'admin' => 1,
+        'users' => 1,
+    ),
+));
+
+//查找一个用户
+$user = Sentry::findUserByLogin('zhangsan');
+
+//验证一个用户
+Sentry::authenticate(array(
+    'email'    => 'zhangsan',
+    'password' => '123',
+));

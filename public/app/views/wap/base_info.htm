@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no,minimal-ui"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link type="text/css" rel="stylesheet" href="base.css"/>
+<script type="text/javascript" src="/static/wap/zepto.min.js"></script>
+<script type="text/javascript" src="/static/wap/fastclick.js"></script>
+<script type="text/javascript" src="/static/wap/template.js"></script>
+<style type="text/css">
+    .tuijian-area{clear:both;zoom:1;overflow:hidden;padding:5px 10px 8px 10px;position:relative}
+    .tuijian-area .img{float:left;margin:4px 10px 0 0}
+    .tuijian-area .msg{zoom:1;overflow:hidden}
+    .tuijian-area h2{line-height:21px;overflow:hidden;text-overflow:ellipsis;word-wrap:break-word;text-align:justify;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical}
+    .tuijian-area p{font-size:12px;color:#8e8e8e;line-height:17px;margin-top:2px}
+    .tuijian-area p a, .tuijian-area p a:hover{color:#2377e8}
+    .tuijian-area .more{position:absolute;right:10px;bottom:7px;color:#bb0000;font-size:12px;background:url(shiyan_header_right.png) no-repeat right center;background-size:auto 8px;padding-right:8px}
+    </style>
+</head>
+<body>
+<div id="screen"></div>
+        <div class="wraper">
+            <div class="img" id="head-list" style="margin-top:10px;"><a href="javascript:;"><img src="http://img6.cache.netease.com/photo/0087/2016-08-31/BVOU3FAR5N620087.jpg" width="320" height="80"></a></div>
+            <br>
+            <div class="text-area shiyan-intro-text FN18">
+                <div class="mt15 clear"></div>
+                {% autoescape false %}<p>{{content}}</p>{% endautoescape %}
+            </div>
+        </div>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    //
+});
+</script>
+</body>
+</html>
